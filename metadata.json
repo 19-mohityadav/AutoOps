@@ -1,0 +1,6 @@
+{
+  "name": "Autonomous Task Assignment System",
+  "description": "An autonomous decision engine that receives civic & business issues, classifies priority with AI, and routes work automatically to optimal team members.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

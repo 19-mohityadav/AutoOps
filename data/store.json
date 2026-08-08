@@ -1,0 +1,731 @@
+{
+  "departments": [
+    {
+      "id": "dept-road",
+      "name": "Road Maintenance",
+      "category": "Road",
+      "description": "Handles road repairs, potholes, sidewalks, and traffic hazards"
+    },
+    {
+      "id": "dept-elec",
+      "name": "Electrical",
+      "category": "Electricity",
+      "description": "Handles street lights, power line issues, and public electrical hazards"
+    },
+    {
+      "id": "dept-water",
+      "name": "Water Department",
+      "category": "Water",
+      "description": "Handles water main leaks, drainage issues, and pipe repairs"
+    },
+    {
+      "id": "dept-sanitation",
+      "name": "Sanitation",
+      "category": "Garbage",
+      "description": "Handles municipal waste collection, garbage overflow, and public cleanliness"
+    },
+    {
+      "id": "dept-safety",
+      "name": "Public Safety",
+      "category": "Public Safety",
+      "description": "Handles urgent public hazards, traffic obstruction, and safety threats"
+    },
+    {
+      "id": "dept-maint",
+      "name": "Building Maintenance",
+      "category": "Maintenance",
+      "description": "Handles public building equipment, HVAC, elevators, and physical infrastructure"
+    },
+    {
+      "id": "dept-it",
+      "name": "IT Support",
+      "category": "IT",
+      "description": "Handles public kiosk systems, civic network connectivity, and municipal IT services"
+    }
+  ],
+  "employees": [
+    {
+      "id": "emp-rahul",
+      "user_id": "usr-rahul",
+      "name": "Rahul Kumar",
+      "email": "rahul.k@civicops.gov",
+      "department_id": "dept-road",
+      "department_name": "Road Maintenance",
+      "skills": [
+        "Road Repair",
+        "Asphalt Work",
+        "Pothole Filling"
+      ],
+      "availability": "AVAILABLE",
+      "active_task_count": 5,
+      "max_capacity": 5
+    },
+    {
+      "id": "emp-aman",
+      "user_id": "usr-aman",
+      "name": "Aman Verma",
+      "email": "aman.v@civicops.gov",
+      "department_id": "dept-road",
+      "department_name": "Road Maintenance",
+      "skills": [
+        "Road Repair",
+        "Pothole Filling",
+        "Traffic Safety"
+      ],
+      "availability": "AVAILABLE",
+      "active_task_count": 1,
+      "max_capacity": 5
+    },
+    {
+      "id": "emp-vikas",
+      "user_id": "usr-vikas",
+      "name": "Vikas Sharma",
+      "email": "vikas.s@civicops.gov",
+      "department_id": "dept-road",
+      "department_name": "Road Maintenance",
+      "skills": [
+        "Road Repair",
+        "Heavy Equipment"
+      ],
+      "availability": "UNAVAILABLE",
+      "active_task_count": 0,
+      "max_capacity": 5
+    },
+    {
+      "id": "emp-priya",
+      "user_id": "usr-priya",
+      "name": "Priya Patel",
+      "email": "priya.p@civicops.gov",
+      "department_id": "dept-elec",
+      "department_name": "Electrical",
+      "skills": [
+        "Electrical Repair",
+        "Street Light Maintenance",
+        "Transformer Ops"
+      ],
+      "availability": "AVAILABLE",
+      "active_task_count": 3,
+      "max_capacity": 5
+    },
+    {
+      "id": "emp-suresh",
+      "user_id": "usr-suresh",
+      "name": "Suresh Nair",
+      "email": "suresh.n@civicops.gov",
+      "department_id": "dept-elec",
+      "department_name": "Electrical",
+      "skills": [
+        "Electrical Repair",
+        "High Voltage",
+        "Street Light Maintenance"
+      ],
+      "availability": "AVAILABLE",
+      "active_task_count": 5,
+      "max_capacity": 5
+    },
+    {
+      "id": "emp-anita",
+      "user_id": "usr-anita",
+      "name": "Anita Rao",
+      "email": "anita.r@civicops.gov",
+      "department_id": "dept-water",
+      "department_name": "Water Department",
+      "skills": [
+        "Plumbing",
+        "Pipe Leak Repair",
+        "Drainage Unblocking"
+      ],
+      "availability": "AVAILABLE",
+      "active_task_count": 2,
+      "max_capacity": 5
+    },
+    {
+      "id": "emp-deepak",
+      "user_id": "usr-deepak",
+      "name": "Deepak Gupta",
+      "email": "deepak.g@civicops.gov",
+      "department_id": "dept-sanitation",
+      "department_name": "Sanitation",
+      "skills": [
+        "Waste Management",
+        "Garbage Collection",
+        "Biohazard Cleaning"
+      ],
+      "availability": "AVAILABLE",
+      "active_task_count": 1,
+      "max_capacity": 5
+    },
+    {
+      "id": "emp-vikram",
+      "user_id": "usr-vikram",
+      "name": "Vikram Singh",
+      "email": "vikram.s@civicops.gov",
+      "department_id": "dept-safety",
+      "department_name": "Public Safety",
+      "skills": [
+        "Public Safety Ops",
+        "Hazard Control"
+      ],
+      "availability": "AVAILABLE",
+      "active_task_count": 5,
+      "max_capacity": 5
+    },
+    {
+      "id": "emp-maya",
+      "user_id": "usr-maya",
+      "name": "Maya Lin",
+      "email": "maya.l@civicops.gov",
+      "department_id": "dept-it",
+      "department_name": "IT Support",
+      "skills": [
+        "Network/IT",
+        "Hardware Support",
+        "Software Troubleshooting"
+      ],
+      "availability": "AVAILABLE",
+      "active_task_count": 1,
+      "max_capacity": 5
+    }
+  ],
+  "issues": [
+    {
+      "id": "iss-pers-test-1786179632900",
+      "title": "Persistent Storage Test Issue",
+      "description": "Checking disk persistence rehydration",
+      "location": "Test Location",
+      "category": "Road",
+      "subcategory": "Pothole",
+      "priority": "Low",
+      "summary": "Disk persistence verification",
+      "status": "ASSIGNED",
+      "ai_used": false,
+      "created_at": "2026-08-08T09:00:32.900Z",
+      "updated_at": "2026-08-08T09:00:32.900Z"
+    },
+    {
+      "id": "iss-632774",
+      "title": "E2E Pipe Leak Test",
+      "description": "Water pipe leaking in commercial district",
+      "location": "Block 7 Commercial",
+      "category": "Water",
+      "subcategory": "Pipe Leak",
+      "priority": "Medium",
+      "summary": "Pipe Leak detected in Water category at Block 7 Commercial.",
+      "status": "RESOLVED",
+      "department_id": "dept-water",
+      "department_name": "Water Department",
+      "assigned_employee_id": "emp-anita",
+      "assigned_employee_name": "Anita Rao",
+      "created_at": "2026-08-08T09:00:32.774Z",
+      "updated_at": "2026-08-08T09:00:32.774Z",
+      "confidence_score": 0.88,
+      "ai_used": false,
+      "classification_reason": "Rule-based classifier detected key operational patterns matching Water (Pipe Leak) with Medium priority.",
+      "assignment_reason": "Assigned to Anita Rao (Water Department) based on matching skills, availability, and lowest active workload (1 tasks)."
+    },
+    {
+      "id": "iss-632666",
+      "title": "Sidewalk Tile Damage",
+      "description": "Cracked sidewalk tiles outside city library",
+      "location": "City Library Walkway",
+      "category": "Maintenance",
+      "subcategory": "Facility Maintenance",
+      "priority": "Medium",
+      "summary": "Facility Maintenance detected in Maintenance category at City Library Walkway.",
+      "status": "ASSIGNED",
+      "department_id": "dept-road",
+      "department_name": "Road Maintenance",
+      "assigned_employee_id": "emp-rahul",
+      "assigned_employee_name": "Rahul Kumar",
+      "created_at": "2026-08-08T09:00:32.666Z",
+      "updated_at": "2026-08-08T09:00:32.772Z",
+      "confidence_score": 0.88,
+      "ai_used": false,
+      "classification_reason": "Rule-based classifier detected key operational patterns matching Maintenance (Facility Maintenance) with Medium priority.",
+      "assignment_reason": "Admin Manual Override: Reassigned to Rahul Kumar (Road Maintenance). Reason: Rebalancing heavy maintenance shift"
+    },
+    {
+      "id": "iss-632562",
+      "title": "Public Security Emergency Threat",
+      "description": "Urgent public security risk near North Gate station requires immediate dispatch",
+      "location": "North Gate Station Plaza",
+      "category": "Public Safety",
+      "subcategory": "Public Hazard",
+      "priority": "High",
+      "summary": "Public Hazard detected in Public Safety category at North Gate Station Plaza.",
+      "status": "UNASSIGNED",
+      "department_id": "dept-safety",
+      "department_name": "Public Safety",
+      "created_at": "2026-08-08T09:00:32.562Z",
+      "updated_at": "2026-08-08T09:00:32.562Z",
+      "confidence_score": 0.88,
+      "ai_used": false,
+      "classification_reason": "Rule-based classifier detected key operational patterns matching Public Safety (Public Hazard) with High priority.",
+      "assignment_reason": "Pending assignment: No available staff with capacity in Public Safety department."
+    },
+    {
+      "id": "iss-632442",
+      "title": "Garbage Dump Overflow",
+      "description": "Uncollected trash overflow creating foul odor near commercial complex",
+      "location": "5th Avenue Market Place",
+      "category": "Garbage",
+      "subcategory": "Garbage Overflow",
+      "priority": "Medium",
+      "summary": "Garbage Overflow detected in Garbage category at 5th Avenue Market Place.",
+      "status": "ASSIGNED",
+      "department_id": "dept-sanitation",
+      "department_name": "Sanitation",
+      "assigned_employee_id": "emp-deepak",
+      "assigned_employee_name": "Deepak Gupta",
+      "created_at": "2026-08-08T09:00:32.442Z",
+      "updated_at": "2026-08-08T09:00:32.442Z",
+      "confidence_score": 0.88,
+      "ai_used": false,
+      "classification_reason": "Rule-based classifier detected key operational patterns matching Garbage (Garbage Overflow) with Medium priority.",
+      "assignment_reason": "Assigned to Deepak Gupta (Sanitation) based on matching skills, availability, and lowest active workload (0 tasks)."
+    },
+    {
+      "id": "iss-632309",
+      "title": "Street Light Outage",
+      "description": "The street light outside Building A has stopped working for three days",
+      "location": "Building A Residential Block",
+      "category": "Electricity",
+      "subcategory": "Street Light Outage",
+      "priority": "High",
+      "summary": "Street Light Outage detected in Electricity category at Building A Residential Block.",
+      "status": "ASSIGNED",
+      "department_id": "dept-elec",
+      "department_name": "Electrical",
+      "assigned_employee_id": "emp-priya",
+      "assigned_employee_name": "Priya Patel",
+      "created_at": "2026-08-08T09:00:32.309Z",
+      "updated_at": "2026-08-08T09:00:32.309Z",
+      "confidence_score": 0.88,
+      "ai_used": false,
+      "classification_reason": "Rule-based classifier detected key operational patterns matching Electricity (Street Light Outage) with High priority.",
+      "assignment_reason": "Assigned to Priya Patel (Electrical) based on matching skills, availability, and lowest active workload (2 tasks)."
+    },
+    {
+      "id": "iss-631876",
+      "title": "Deep Pothole on Oak Street",
+      "description": "Vehicles hitting a deep hole in road surface near school entrance",
+      "location": "Oak Street & 4th",
+      "category": "Road",
+      "subcategory": "Pothole",
+      "priority": "High",
+      "summary": "Pothole detected in Road category at Oak Street & 4th.",
+      "status": "ASSIGNED",
+      "department_id": "dept-road",
+      "department_name": "Road Maintenance",
+      "assigned_employee_id": "emp-aman",
+      "assigned_employee_name": "Aman Verma",
+      "created_at": "2026-08-08T09:00:31.876Z",
+      "updated_at": "2026-08-08T09:00:31.876Z",
+      "confidence_score": 0.88,
+      "ai_used": false,
+      "classification_reason": "Rule-based classifier detected key operational patterns matching Road (Pothole) with High priority.",
+      "assignment_reason": "Assigned to Aman Verma (Road Maintenance) based on matching skills, availability, and lowest active workload (1 tasks)."
+    },
+    {
+      "id": "iss-101",
+      "title": "Broken water pipe leaking heavily on Park Street",
+      "description": "Clean water is leaking onto the main walkway near Park Street metro exit for the past 5 hours.",
+      "location": "Park Street Metro Exit Gate 2",
+      "contact_info": "resident@parkstreet.org",
+      "category": "Water",
+      "subcategory": "Pipe Leakage",
+      "priority": "High",
+      "summary": "Water pipe leak creating puddle hazards near metro exit.",
+      "status": "IN_PROGRESS",
+      "department_id": "dept-water",
+      "department_name": "Water Department",
+      "assigned_employee_id": "emp-anita",
+      "assigned_employee_name": "Anita Rao",
+      "created_at": "2026-08-08T05:00:31.875Z",
+      "updated_at": "2026-08-08T07:00:31.875Z",
+      "confidence_score": 0.96,
+      "ai_used": true,
+      "classification_reason": "Automated AI classified issue as Water / Pipe Leakage with High priority due to pedestrian hazard and continuous flow.",
+      "assignment_reason": "Assigned to Anita Rao because she belongs to Water Department, possesses Pipe Leak Repair skill, is AVAILABLE, and has lowest workload (1 task)."
+    },
+    {
+      "id": "iss-102",
+      "title": "Traffic light power line sparking",
+      "description": "Overhead electrical wire sparking near central square traffic signal.",
+      "location": "Central Square Junction",
+      "contact_info": "police.traffic@civic.gov",
+      "category": "Electricity",
+      "subcategory": "Electrical Hazard",
+      "priority": "Critical",
+      "summary": "Sparking overhead wire creating immediate public safety risk.",
+      "status": "ASSIGNED",
+      "department_id": "dept-elec",
+      "department_name": "Electrical",
+      "assigned_employee_id": "emp-priya",
+      "assigned_employee_name": "Priya Patel",
+      "created_at": "2026-08-08T08:00:31.875Z",
+      "updated_at": "2026-08-08T08:00:31.875Z",
+      "confidence_score": 0.98,
+      "ai_used": true,
+      "classification_reason": "AI classified as Electricity / Electrical Hazard with Critical priority due to immediate public safety threat.",
+      "assignment_reason": "Assigned to Priya Patel who has Electrical Repair skills and active task capacity (2/5) over Suresh Nair who is at max capacity (5/5)."
+    }
+  ],
+  "tasks": [
+    {
+      "id": "tsk-632898",
+      "issue_id": "iss-632774",
+      "assigned_employee_id": "emp-anita",
+      "assigned_employee_name": "Anita Rao",
+      "assigned_at": "2026-08-08T09:00:32.898Z",
+      "status": "RESOLVED",
+      "resolution_note": "Pipe joint successfully sealed and pressure tested."
+    },
+    {
+      "id": "tsk-632773",
+      "issue_id": "iss-632666",
+      "assigned_employee_id": "emp-rahul",
+      "assigned_employee_name": "Rahul Kumar",
+      "assigned_at": "2026-08-08T09:00:32.773Z",
+      "status": "ASSIGNED"
+    },
+    {
+      "id": "tsk-632561",
+      "issue_id": "iss-632442",
+      "assigned_employee_id": "emp-deepak",
+      "assigned_employee_name": "Deepak Gupta",
+      "assigned_at": "2026-08-08T09:00:32.561Z",
+      "status": "ASSIGNED"
+    },
+    {
+      "id": "tsk-632441",
+      "issue_id": "iss-632309",
+      "assigned_employee_id": "emp-priya",
+      "assigned_employee_name": "Priya Patel",
+      "assigned_at": "2026-08-08T09:00:32.441Z",
+      "status": "ASSIGNED"
+    },
+    {
+      "id": "tsk-632308",
+      "issue_id": "iss-631876",
+      "assigned_employee_id": "emp-aman",
+      "assigned_employee_name": "Aman Verma",
+      "assigned_at": "2026-08-08T09:00:32.308Z",
+      "status": "ASSIGNED"
+    },
+    {
+      "id": "tsk-101",
+      "issue_id": "iss-101",
+      "assigned_employee_id": "emp-anita",
+      "assigned_employee_name": "Anita Rao",
+      "assigned_at": "2026-08-08T05:00:31.875Z",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "tsk-102",
+      "issue_id": "iss-102",
+      "assigned_employee_id": "emp-priya",
+      "assigned_employee_name": "Priya Patel",
+      "assigned_at": "2026-08-08T08:00:31.875Z",
+      "status": "ASSIGNED"
+    }
+  ],
+  "decisionLogs": [
+    {
+      "id": "log-101-1",
+      "issue_id": "iss-101",
+      "timestamp": "2026-08-08T05:00:31.875Z",
+      "step_name": "Issue Created",
+      "decision_type": "INTAKE",
+      "decision": "Received civic report",
+      "reason": "Public user submitted issue via portal"
+    },
+    {
+      "id": "log-101-2",
+      "issue_id": "iss-101",
+      "timestamp": "2026-08-08T05:00:32.375Z",
+      "step_name": "AI Analysis",
+      "decision_type": "CLASSIFICATION",
+      "decision": "Category: Water, Priority: High",
+      "reason": "Extracted keywords \"water pipe\", \"leaking heavily\" and detected pedestrian hazard signal"
+    },
+    {
+      "id": "log-101-3",
+      "issue_id": "iss-101",
+      "timestamp": "2026-08-08T05:00:33.075Z",
+      "step_name": "Department Resolution",
+      "decision_type": "ROUTING",
+      "decision": "Department: Water Department",
+      "reason": "Mapped Water category to Water Department"
+    },
+    {
+      "id": "log-101-4",
+      "issue_id": "iss-101",
+      "timestamp": "2026-08-08T05:00:33.675Z",
+      "step_name": "Employee Selection",
+      "decision_type": "ASSIGNMENT",
+      "decision": "Selected Anita Rao",
+      "reason": "Matched skill \"Pipe Leak Repair\", status AVAILABLE, lowest workload (1 task)"
+    },
+    {
+      "id": "log-iss-631876-1",
+      "issue_id": "iss-631876",
+      "timestamp": "2026-08-08T09:00:31.876Z",
+      "step_name": "Issue Created",
+      "decision_type": "INTAKE",
+      "decision": "Reported at Oak Street & 4th",
+      "reason": "Received issue \"Deep Pothole on Oak Street\""
+    },
+    {
+      "id": "log-iss-631876-2",
+      "issue_id": "iss-631876",
+      "timestamp": "2026-08-08T09:00:32.276Z",
+      "step_name": "AI Analyzed",
+      "decision_type": "CLASSIFICATION",
+      "decision": "Road (High Priority)",
+      "reason": "Rule-based classifier detected key operational patterns matching Road (Pothole) with High priority.",
+      "metadata": {
+        "confidence": 0.88,
+        "used_fallback": true
+      }
+    },
+    {
+      "id": "log-iss-631876-3",
+      "issue_id": "iss-631876",
+      "timestamp": "2026-08-08T09:00:32.676Z",
+      "step_name": "Task Assigned",
+      "decision_type": "ASSIGNMENT",
+      "decision": "Assigned to Aman Verma",
+      "reason": "Selected Aman Verma for Road Maintenance department (1 active tasks).",
+      "metadata": {
+        "employee_id": "emp-aman",
+        "active_tasks_before": 1
+      }
+    },
+    {
+      "id": "log-iss-632309-1",
+      "issue_id": "iss-632309",
+      "timestamp": "2026-08-08T09:00:32.309Z",
+      "step_name": "Issue Created",
+      "decision_type": "INTAKE",
+      "decision": "Reported at Building A Residential Block",
+      "reason": "Received issue \"Street Light Outage\""
+    },
+    {
+      "id": "log-iss-632309-2",
+      "issue_id": "iss-632309",
+      "timestamp": "2026-08-08T09:00:32.709Z",
+      "step_name": "AI Analyzed",
+      "decision_type": "CLASSIFICATION",
+      "decision": "Electricity (High Priority)",
+      "reason": "Rule-based classifier detected key operational patterns matching Electricity (Street Light Outage) with High priority.",
+      "metadata": {
+        "confidence": 0.88,
+        "used_fallback": true
+      }
+    },
+    {
+      "id": "log-iss-632309-3",
+      "issue_id": "iss-632309",
+      "timestamp": "2026-08-08T09:00:33.109Z",
+      "step_name": "Task Assigned",
+      "decision_type": "ASSIGNMENT",
+      "decision": "Assigned to Priya Patel",
+      "reason": "Selected Priya Patel for Electrical department (2 active tasks).",
+      "metadata": {
+        "employee_id": "emp-priya",
+        "active_tasks_before": 2
+      }
+    },
+    {
+      "id": "log-iss-632442-1",
+      "issue_id": "iss-632442",
+      "timestamp": "2026-08-08T09:00:32.442Z",
+      "step_name": "Issue Created",
+      "decision_type": "INTAKE",
+      "decision": "Reported at 5th Avenue Market Place",
+      "reason": "Received issue \"Garbage Dump Overflow\""
+    },
+    {
+      "id": "log-iss-632442-2",
+      "issue_id": "iss-632442",
+      "timestamp": "2026-08-08T09:00:32.842Z",
+      "step_name": "AI Analyzed",
+      "decision_type": "CLASSIFICATION",
+      "decision": "Garbage (Medium Priority)",
+      "reason": "Rule-based classifier detected key operational patterns matching Garbage (Garbage Overflow) with Medium priority.",
+      "metadata": {
+        "confidence": 0.88,
+        "used_fallback": true
+      }
+    },
+    {
+      "id": "log-iss-632442-3",
+      "issue_id": "iss-632442",
+      "timestamp": "2026-08-08T09:00:33.242Z",
+      "step_name": "Task Assigned",
+      "decision_type": "ASSIGNMENT",
+      "decision": "Assigned to Deepak Gupta",
+      "reason": "Selected Deepak Gupta for Sanitation department (0 active tasks).",
+      "metadata": {
+        "employee_id": "emp-deepak",
+        "active_tasks_before": 0
+      }
+    },
+    {
+      "id": "log-iss-632562-1",
+      "issue_id": "iss-632562",
+      "timestamp": "2026-08-08T09:00:32.562Z",
+      "step_name": "Issue Created",
+      "decision_type": "INTAKE",
+      "decision": "Reported at North Gate Station Plaza",
+      "reason": "Received issue \"Public Security Emergency Threat\""
+    },
+    {
+      "id": "log-iss-632562-2",
+      "issue_id": "iss-632562",
+      "timestamp": "2026-08-08T09:00:32.962Z",
+      "step_name": "AI Analyzed",
+      "decision_type": "CLASSIFICATION",
+      "decision": "Public Safety (High Priority)",
+      "reason": "Rule-based classifier detected key operational patterns matching Public Safety (Public Hazard) with High priority.",
+      "metadata": {
+        "confidence": 0.88,
+        "used_fallback": true
+      }
+    },
+    {
+      "id": "log-iss-632562-3",
+      "issue_id": "iss-632562",
+      "timestamp": "2026-08-08T09:00:33.362Z",
+      "step_name": "Assignment Pending",
+      "decision_type": "UNASSIGNED",
+      "decision": "Marked as UNASSIGNED",
+      "reason": "No available staff in Public Safety department."
+    },
+    {
+      "id": "log-iss-632666-1",
+      "issue_id": "iss-632666",
+      "timestamp": "2026-08-08T09:00:32.666Z",
+      "step_name": "Issue Created",
+      "decision_type": "INTAKE",
+      "decision": "Reported at City Library Walkway",
+      "reason": "Received issue \"Sidewalk Tile Damage\""
+    },
+    {
+      "id": "log-iss-632666-2",
+      "issue_id": "iss-632666",
+      "timestamp": "2026-08-08T09:00:33.066Z",
+      "step_name": "AI Analyzed",
+      "decision_type": "CLASSIFICATION",
+      "decision": "Maintenance (Medium Priority)",
+      "reason": "Rule-based classifier detected key operational patterns matching Maintenance (Facility Maintenance) with Medium priority.",
+      "metadata": {
+        "confidence": 0.88,
+        "used_fallback": true
+      }
+    },
+    {
+      "id": "log-iss-632666-3",
+      "issue_id": "iss-632666",
+      "timestamp": "2026-08-08T09:00:33.466Z",
+      "step_name": "Assignment Pending",
+      "decision_type": "UNASSIGNED",
+      "decision": "Marked as UNASSIGNED",
+      "reason": "No available staff in Building Maintenance department."
+    },
+    {
+      "id": "log-iss-632666-1786179632773",
+      "issue_id": "iss-632666",
+      "timestamp": "2026-08-08T09:00:32.773Z",
+      "step_name": "Human Override",
+      "decision_type": "ADMIN_OVERRIDE",
+      "decision": "Reassigned to Rahul Kumar",
+      "reason": "Admin override executed: Rebalancing heavy maintenance shift"
+    },
+    {
+      "id": "log-iss-632774-1",
+      "issue_id": "iss-632774",
+      "timestamp": "2026-08-08T09:00:32.774Z",
+      "step_name": "Issue Created",
+      "decision_type": "INTAKE",
+      "decision": "Reported at Block 7 Commercial",
+      "reason": "Received issue \"E2E Pipe Leak Test\""
+    },
+    {
+      "id": "log-iss-632774-2",
+      "issue_id": "iss-632774",
+      "timestamp": "2026-08-08T09:00:33.174Z",
+      "step_name": "AI Analyzed",
+      "decision_type": "CLASSIFICATION",
+      "decision": "Water (Medium Priority)",
+      "reason": "Rule-based classifier detected key operational patterns matching Water (Pipe Leak) with Medium priority.",
+      "metadata": {
+        "confidence": 0.88,
+        "used_fallback": true
+      }
+    },
+    {
+      "id": "log-iss-632774-3",
+      "issue_id": "iss-632774",
+      "timestamp": "2026-08-08T09:00:33.574Z",
+      "step_name": "Task Assigned",
+      "decision_type": "ASSIGNMENT",
+      "decision": "Assigned to Anita Rao",
+      "reason": "Selected Anita Rao for Water Department department (1 active tasks).",
+      "metadata": {
+        "employee_id": "emp-anita",
+        "active_tasks_before": 1
+      }
+    }
+  ],
+  "users": [
+    {
+      "id": "usr-admin",
+      "name": "Admin Operator",
+      "email": "admin@civicops.gov",
+      "role": "ADMIN"
+    },
+    {
+      "id": "usr-aman",
+      "name": "Aman Verma",
+      "email": "aman.v@civicops.gov",
+      "role": "EMPLOYEE",
+      "department_id": "dept-road"
+    },
+    {
+      "id": "usr-rahul",
+      "name": "Rahul Kumar",
+      "email": "rahul.k@civicops.gov",
+      "role": "EMPLOYEE",
+      "department_id": "dept-road"
+    },
+    {
+      "id": "usr-priya",
+      "name": "Priya Patel",
+      "email": "priya.p@civicops.gov",
+      "role": "EMPLOYEE",
+      "department_id": "dept-elec"
+    },
+    {
+      "id": "usr-deepak",
+      "name": "Deepak Gupta",
+      "email": "deepak.g@civicops.gov",
+      "role": "EMPLOYEE",
+      "department_id": "dept-sanitation"
+    },
+    {
+      "id": "usr-citizen",
+      "name": "John Citizen",
+      "email": "john@example.com",
+      "role": "CITIZEN"
+    },
+    {
+      "id": "usr-1786179633015",
+      "name": "Test Resident",
+      "email": "testuser_1786179633015@civic.org",
+      "role": "CITIZEN"
+    }
+  ],
+  "updated_at": "2026-08-08T09:00:33.015Z"
+}
