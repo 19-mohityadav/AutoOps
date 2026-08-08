@@ -154,9 +154,3 @@ A sample test script exists at tests/auditTests.ts. The npm `test` script runs `
 - Fork the repo, make changes in a feature branch, and open a PR.
 - Add tests for server-side logic (decisionEngine and aiClassifier) and UI flows.
 
-## License
-No license file present. Add a LICENSE (MIT or similar) if you intend to open-source the project.
-
----
-
-If you'd like, I will now commit this README.md to the repository (19-mohityadav/AutoOps) as `README.md`. I will use commit message: "chore: add detailed README". Should I proceed?
